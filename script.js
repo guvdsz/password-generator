@@ -10,14 +10,14 @@ generatorBtn.addEventListener("click", (e) => {
 	generatorContainer.classList.toggle("generator-appears");
 	setTimeout(() => {
 		generatorForm.classList.toggle("appears");
-	}, 150);
+	}, 200);
 });
 closeBtn.addEventListener("click", (e) => {
 	e.preventDefault();
 	generatorForm.classList.toggle("appears");
 	setTimeout(() => {
 		generatorContainer.classList.toggle("generator-appears");
-	}, 150);
+	}, 200);
 });
 
 //Generate Password
