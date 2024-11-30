@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    font-size: 62.5%;
+    --primary-color: #253442;
+    --secondary-color: #FF5733;
+    --tertiary-color: #bebebe;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EA;
+    min-height: 100vh;
+    gap: 1.5rem;
+}
+.wrapper-container {
+    display: flex;
+    width: 60vw;
+    height: 90vh;
+    background-color: #fafafa;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(83, 83, 83, 0.1);
+}
+.banner-container {
+    width: 40%;
+    background-image: url(img/amanda-perez-7oL1PR6AV8o-unsplash.jpg);
+    background-size: cover;
+    background-position: center right;
+}
+.form-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.register-form {
+    width: 60%;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-form h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.input-group input {
+    outline: none;
+    width: 100%;
+    border: none;
+    padding: 1rem 1rem 1rem 0rem;
+    background-color: transparent;
+    border-bottom: 0.1rem solid var(--tertiary-color);
+    transition: border-bottom 0.3s;
+    &::placeholder {
+        color: var(--tertiary-color);
+    }
+    &:focus {
+        border-bottom: 0.1rem solid var(--primary-color);
+    }
+}
+.actions-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.actions-group input[type="submit"] {
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+}
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.checkbox-group input[type="checkbox"] {
+    display: block;
+}
+.checkbox-group label {
+    font-size: 1.2rem;
+}
+.login-gap {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.login-gap a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+strong {
+    color: var(--secondary-color);
+}
+.password-generator {
+    font-size: 1.2rem;
+}
+.password-generator a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+.generator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0rem;
+    width: 0;
+    background-color: #fafafa;
+    transition: all .3s;
+    opacity: 0;
+    padding: 3rem;
+}
+.generator-appears {
+    opacity: 1;
+    height: 40rem;
+    width: 20vw;
+}
+.generator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    width: 100%;
+    transition: all .3s;
+}
+.generator-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+.appears {
+    opacity: 1;
+}
+.generator-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.generator-checkbox-group{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    margin-left: 0.1rem;
+}
+.generator-input-group input[type="number"] {
+    outline: none;
+    width: 100%;
+    border: none;
+    padding: 1rem 1rem 1rem 0rem;
+    border-bottom: 0.1rem solid var(--tertiary-color);
+    background-color: transparent;
+    transition: border-bottom 0.3s;
+    &::placeholder {
+        color: var(--tertiary-color);
+    }
+    &:focus {
+        border-bottom: 0.1rem solid var(--primary-color);
+    }
+}
+.generator-form input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1.5rem;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+}
+.generator-checkbox-group label {
+    font-size: 1.2rem;
+}
+.generator-form .close-btn {
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+}

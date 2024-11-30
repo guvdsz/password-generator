@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <main class="wrapper-container">
+        <div class="banner-container">
+        </div>
+        <div class="form-container">
+            <form class="register-form" id="registerForm">
+                <h1>Create Account</h1>
+                <div class="input-group">
+                    <input type="email" name="emailInput" id="emailInput" placeholder="Email">
+                    <input type="tel" name="telInput" id="telInput" placeholder="Telephone">
+                    <input type="password" name="passwordInput" id="passwordInput" placeholder="Password">
+                </div>
+                <div class="actions-group">
+                    <div class="checkbox-group">
+                        <label for="termsInput">Accept <strong>Legal Agreements</strong></label>
+                        <input type="checkbox" name="termsInput" id="termsInput">
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+            <p class="login-gap">Already Have an Account? <a href="#">Log in</a></p>
+            <p class="password-generator">Need help creating a password? <a class="generator-btn">Generate one here</a></p>
+        </div>
+    </main>
+    <div class="generator-container">
+        <form class="generator-form">
+            <h2>Generate a Password</h2>
+            <div class="generator-input-group">
+                <input type="number" name="passwordLengthInput" id="passwordLengthInput" placeholder="Password Length">
+                <div class="generator-checkbox-group">
+                    <input type="checkbox" name="includeUpperCase" id="includeUpperCase">
+                    <label for="includeUpperCase">Include Uppercase</label>
+                </div>
+                <div class="generator-checkbox-group">
+                    <input type="checkbox" name="includeLowerCase" id="includeLowerCase">
+                    <label for="includeLowerCase">Include LowerCase</label>
+                </div>
+                <div class="generator-checkbox-group">
+                    <input type="checkbox" name="includeNumbers" id="includeNumbers">
+                    <label for="includeNumbers">Include Numbers</label>
+                </div>
+                <div class="generator-checkbox-group">
+                    <input type="checkbox" name="includeSymbols" id="includeSymbols">
+                    <label for="includeSymbols">Include Symbols</label>
+                </div>
+            </div>
+            <input type="submit" value="Generate Password">
+            <button class="close-btn">Close</button>
+        </form>
+    </div>
+</body>
+</html>
